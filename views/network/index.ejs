@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+<body>
+<header>
+<p><a class="home" href="/">🏠</a><p>
+</header>
+<h1>All Networks</h1>
+<% networks.forEach(network => {%>
+<div class="networks">
+<nav>
+<h2><a class="network-name" href='/networks/<%= network.network_id %>'><%= network.network_name %></a></h2>
+<p><a href='/networks/<%= network.network_id %>' style="background-color: transparent"><img src="<%= network.logo_url %>"></a></p>
+</nav>
+</div>
+<%})%>
+<form class="my-form" method="POST" action="/networks">
+    <input name="network_name" placeholder="New Network">
+    <input name="logo_url" placeholder="Logo Url">
+    <button class="submit" type="submit">SUBMIT</button>
+</form>
+
+<% include ../partials/footer.ejs %>

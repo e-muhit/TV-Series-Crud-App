@@ -1,0 +1,20 @@
+<% include ../partials/header %>
+<body>
+<header>
+<p><a class="home" href="/">🏠</a><p>
+</header>
+<div class="networks">
+<h1> <%= network.network_name %> </h1>
+<p><img src="<%= network.logo_url %>"></p>
+</div>
+<% series.forEach(show => {%>
+<div class="network-series">
+<nav>
+<p><a  style="background-color: transparent" href='/series/<%= show.show_id %>'><%= show.show_name %></a></p>
+</nav>
+</div>
+<%})%>
+<form action="/networks/<%= network.network_id %>?_method=DELETE" method="POST">
+    <p><button class="delete" type="submit">DELETE</button></p>
+</form>
+<% include ../partials/footer.ejs %>

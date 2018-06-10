@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+<body>
+<header>
+<p><a class="home" href="/">🏠</a><p>
+</header>
+<h1>All Genres</h1>
+<% genres.forEach(genre => {%>
+<div>
+<nav>
+<h2 class="genres" ><a href='/genres/<%= genre.genre_id %>'><%= genre.genre_name %></a></h2>
+</nav>
+</div>
+<%})%>
+<form class="my-form" method="POST" action="/genres">
+    <input name="genre_name" placeholder="New Genre">
+    <button class="submit" type="submit">SUBMIT</button>
+</form>
+<% include ../partials/footer.ejs %>

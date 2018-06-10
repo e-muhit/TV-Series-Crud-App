@@ -1,0 +1,17 @@
+<% include ../partials/header %>
+<body>
+<header>
+<p><a class="home" href="/">🏠</a><p>
+</header>
+<h1>All TV Series</h1>
+<% series.forEach(show => {%>
+<div class="series">
+<nav>
+<p class='show-title'><a class="show" href='/series/<%= show.show_id %>'><%= show.show_name %></a></p> 
+<p><a class="show" href="/networks/<%= show.network_id %>">NETWORK</a></p>
+<p><a class="show" href="/genres/<%= show.genre_id %>">GENRE</a></p>
+</nav>
+ </div>
+<%})%>
+
+<% include ../partials/footer.ejs %>

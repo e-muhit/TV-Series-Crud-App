@@ -1,0 +1,251 @@
+img {
+    height: 300px;
+    width: 300px;
+    max-height: 600px;
+    max-width: 600px;
+    border-radius: 25px;
+}
+
+.homepage {
+    font-size: 8rem;
+    color: rgb(23, 134, 125);
+}
+
+body {
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    background-color: black;
+    color: rgb(217, 255, 1);
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.webpage-nav {
+    text-align: center;
+}
+
+.webpage {
+    display: inline-block;
+    border-right: 8px solid lightgray;
+    padding-right: 3px;
+    font-size: 3rem;
+    border-radius: 0;
+}
+
+.networks {
+    text-align: center;
+}
+
+.show-name {
+    font-size: 1.5rem;
+}
+
+.each-show {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.each-show-info {
+    position: absolute;
+    text-align: center;
+    height: 9rem;
+    width: 19rem;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    border-radius: 25px;
+    color: rgb(110, 219, 223)
+}
+
+form {
+    text-align: center;
+    height: 3rem;
+    width: 50rem;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: navy;
+    color: rgb(255, 61, 61);
+    text-align: center;
+    height: 1.5rem;
+}
+
+select {
+    border: 2px solid black;
+    background-color: navy;
+    color: rgb(255, 61, 61);
+    height: 1.5rem;
+}
+
+nav {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    color: azure;
+    font-size: 5rem;
+    background-color: black;
+    border-radius: 25px;
+}
+
+h2 {
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.new-show-header {
+    border-radius: 25px;
+    display: block;
+    text-align: center;
+    background-color: navy;
+    color: rgb(255, 61, 61);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+footer {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    margin: .5rem;
+}
+
+.submit {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    margin: .5rem;
+}
+
+.series {
+    background-color: black;
+    text-align: center;
+    height: fit-content;
+    width: 20rem;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 25px;
+}
+
+.show {
+    height: 7rem;
+    width: 20rem;
+    margin: auto;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.genre-series {
+    background-color: black;
+    width: 22rem;
+    height: 1.5rem;
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.network-series {
+    background-color: black;
+    width: 22rem;
+    height: 1.5rem;
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.show-title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.new {
+    height: 3rem;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+}
+
+.new-select {
+    height: 3rem;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+}
+
+.home {
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+.network-name {
+    font-size: 5rem;
+}
+
+.random-show {
+    height: 20rem;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    margin: 3rem;
+}
+.random-show-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+}
+.info {
+    width: 8rem;
+    height: 2rem;
+    margin: 0 auto;
+    display: block;
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    border-radius: 25px;
+}

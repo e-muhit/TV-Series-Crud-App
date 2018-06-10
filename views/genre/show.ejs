@@ -1,0 +1,17 @@
+<% include ../partials/header %>
+<body>
+<header>
+<p><a class="home" href="/">🏠</a><p>
+</header>
+<h1> <%= genre.genre_name %> </h1>
+<% series.forEach(show => {%>
+<div class="genre-series">
+<nav>
+<p><a style="background-color: transparent" href='/series/<%= show.show_id %>'><%= show.show_name %></a></p>
+</nav>
+</div>
+<%})%>
+<form action="/genres/<%= genre.genre_id %>?_method=DELETE" method="POST">
+    <p><button class="delete" type="submit">DELETE</button></p>
+</form>
+<% include ../partials/footer.ejs %>

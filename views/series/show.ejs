@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+<body  class="each-show" style=" background-image: url('<%= show.image_url %>')">
+<header>
+<p><a class="home" href="/">🏠</a><p>
+</header>
+<div class="each-show-info">
+<h2 class="show-name"><%= show.show_name %> </h2>
+<p><%= show.show_name %> has <%= show.number_of_seasons %> seasons with a total of <%= show.number_of_episodes %> episodes</p>
+</div>
+<footer>
+<form class="my-form-edit" method="POST" action="/series/<%= show.show_id %>?_method=PUT">
+    <input name="show_name" value="<%= show.show_name %>">
+    <input name="number_of_seasons" value="<%= show.number_of_seasons %>">
+    <input name="number_of_episodes" value="<%= show.number_of_episodes %>">
+    <input name="image_url" value="<%= show.image_url %>">
+    <select name="network_id">
+        <% networks.forEach(network => {%>
+            <option value='<%= network.network_id %>'><%= network.network_name %></option>
+        <%})%>
+    </select>
+    <select name="genre_id">
+        <% genres.forEach(genre => {%>
+            <option value='<%= genre.genre_id %>'><%= genre.genre_name %></option>
+        <%})%>
+    </select>
+    <button class="submit" type="submit">SUBMIT</button>
+</form>
+<form action="/series/<%= show.show_id %>?_method=DELETE" method="POST">
+    <p><button class="delete" type="submit">DELETE</button></p>
+</form>
+</footer>
+<% include ../partials/footer.ejs %>

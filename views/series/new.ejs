@@ -1,0 +1,25 @@
+<% include ../partials/header %>
+<body>
+<header>
+<p><a class="home" href="/">🏠</a><p>
+</header>
+<h1>New Show</h1>
+<h2 class="new-show-header">Please insert a new show</h2>
+<form class="my-form" method="POST" action="/series" >
+    <input class='new' name="show_name" placeholder="Show Name">
+    <input class='new' name="number_of_seasons" placeholder="Number of Seasons">
+    <input class='new' name="number_of_episodes" placeholder="Number of Episodes">
+    <input class='new' name="image_url" placeholder="Image">
+    <select class='new-select' name="network_id">
+    <% networks.forEach(network => {%>
+    <option value='<%= network.network_id %>'><%= network.network_name %></option>
+    <%})%>
+    </select>
+    <select class='new-select' name="genre_id">
+    <% genres.forEach(genre => {%>
+    <option value='<%= genre.genre_id %>'><%= genre.genre_name %></option>
+    <%})%>
+    </select>
+    <button class="submit" type="submit">SUBMIT</button>
+</form>
+<% include ../partials/footer.ejs %>
